@@ -1,0 +1,11 @@
+Name: NogginBox.Tagged
+AntiForgery: enabled
+Author: Richard Garside
+Website: http://www.nogginbox.co.uk
+Version: 1.0.0
+OrchardVersion: 1.0.0
+Description: Create a layer for widgets based on the content's tags.
+Features:
+    NogginBox.Tagged:
+        Description: Create a layer for widgets based on the content's tags.
+        Category: Layer rules
