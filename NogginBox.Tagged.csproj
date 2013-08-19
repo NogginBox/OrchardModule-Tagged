@@ -94,6 +94,7 @@
     <Compile Include="CurrentContentItemHandler.cs" />
     <Compile Include="TagsMatchSortCriteria.cs" />
     <Compile Include="WithTagsRuleProvider.cs" />
+    <Compile Include="WorkContextExtensionMethods.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
