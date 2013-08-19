@@ -46,3 +46,9 @@ C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\N
 C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.csprojResolveAssemblyReference.cache
 C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.dll
 C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.pdb
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Projections.dll
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Forms.dll
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Tokens.dll
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Projections.pdb
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Forms.pdb
+C:\Users\Richard\Garsonix\Clients\iSky\Orchard.1.7.Scr\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Tokens.pdb
