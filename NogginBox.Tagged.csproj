@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrentContentItemHandler.cs" />
+    <Compile Include="TagsMatchFilter.cs" />
     <Compile Include="TagsMatchSortCriteria.cs" />
     <Compile Include="WithTagsRuleProvider.cs" />
     <Compile Include="WorkContextExtensionMethods.cs" />

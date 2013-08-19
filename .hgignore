@@ -1,2 +1,4 @@
 syntax: glob
 bin/*
+obj/Debug/*
+NogginBox.Tagged.csproj.user

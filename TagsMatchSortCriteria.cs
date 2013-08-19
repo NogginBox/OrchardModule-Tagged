@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using Orchard;
 using Orchard.ContentManagement;
@@ -36,17 +35,15 @@ namespace NogginBox.Tagged
 		public void ApplySortCriterion(SortCriterionContext context)
 		{
 			var workContext = _workContextAccessor.GetContext();
-			var taggedContent = workContext.GetTaggedContentForCurrentContent().ToList();
-			if (! taggedContent.Any()) return;
+			var tagParts = workContext.GetTaggedContentForCurrentContent();
+			if (tagParts == null || ! tagParts.Any()) return;
+			var tagIds = tagParts.SelectMany(t => t.CurrentTags).Select(t => t.Id);
 
-			var tagParts = taggedContent.Select(t => t.As<TagsPart>());
-			var tags = tagParts.SelectMany(t => t.CurrentTags).ToList();
-			var tagIds = tags.Select(t => t.Id);
 
 			// Stuck : http://stackoverflow.com/questions/18317286/creating-an-orchard-query-sort-criteria-with-an-agregate-function
 
 			// 
-			Action<IAliasFactory> selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags").Property("TagRecord", "tagRecord").;
+			Action<IAliasFactory> selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags").Property("TagRecord", "tagRecord");
 			Action<IHqlSortFactory> filter = x => x.Asc("Id");
 
 			// apply sort
