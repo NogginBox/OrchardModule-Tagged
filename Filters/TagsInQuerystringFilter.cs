@@ -41,32 +41,30 @@ namespace NogginBox.Tagged.Filters
 			var tagNames = tags.Split(',');
 			if (!tagNames.Any()) return;
 			
-			// Todo: Different filter based on option chosen by admin user
-			/*int op = Convert.ToInt32(context.State.Operator);
+			Action<IAliasFactory> selector;
+			Action<IHqlExpressionFactory> filter;
 
+			// Match some or all of the querystring tags
+			int op = Convert.ToInt32(context.State.Operator);
 			switch (op)
 			{
 				case 0:
 					// is one of
-					Action<IAliasFactory> s = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags").Property("TagRecord", "tagRecord");
-					Action<IHqlExpressionFactory> f = x => x.InG("Id", ids);
-					context.Query.Where(s, f);
+					selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags").Property("TagRecord", "tagRecord");
+					filter = x => x.InG("TagName", tagNames);
+					context.Query.Where(selector, filter);
 					break;
 				case 1:
 					// is all of
-					foreach (var id in ids)
+					foreach (var tag in tagNames)
 					{
-						int tagId = id;
-						Action<IAliasFactory> selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags" + tagId);
-						Action<IHqlExpressionFactory> filter = x => x.Eq("TagRecord.Id", tagId);
+						var tagName = tag;
+						selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags"+tagName);
+						filter = x => x.Eq("TagRecord.TagName", tagName);
 						context.Query.Where(selector, filter);
 					}
 					break;
-			}*/
-
-			Action<IAliasFactory> selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags").Property("TagRecord", "tagRecord");
-			Action<IHqlExpressionFactory> filter = x => x.InG("TagName", tagNames);
-			context.Query.Where(selector, filter);
+			}
 		}
 	}
 }

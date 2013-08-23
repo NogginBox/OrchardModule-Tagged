@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using NogginBox.Tagged.Forms;
 using Orchard;
 using Orchard.ContentManagement;
 using Orchard.Environment.Extensions;
@@ -10,12 +11,12 @@ using Orchard.Tags.Models;
 
 namespace NogginBox.Tagged.Filters
 {
-	[OrchardFeature("NogginBox.TagsMatchFilter")]
-	public class TagsMatchFilter : IFilterProvider
+	[OrchardFeature("NogginBox.TagsMatchContentFilter")]
+	public class TagsMatchContentFilter : IFilterProvider
 	{
 		private readonly IWorkContextAccessor _workContextAccessor;
 
-		public TagsMatchFilter(IWorkContextAccessor workContextAccessor) {
+		public TagsMatchContentFilter(IWorkContextAccessor workContextAccessor) {
 			_workContextAccessor = workContextAccessor;
 		}
 
@@ -26,7 +27,7 @@ namespace NogginBox.Tagged.Filters
 				.Element("TagsMatch", T("TagsMatch"), T("Tagged content items"),
 					ApplyFilter,
 					context => T("Tags match order"),
-					"SelectTags"
+					TagMatchTypeForm.FormId
 				);
 		}
 

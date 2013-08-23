@@ -1,22 +1,24 @@
-Name: Tagged layer rules and filters
+Name: Tagged Power Tools
 AntiForgery: enabled
 Author: Richard Garside
 Website: http://www.nogginbox.co.uk
 Version: 1.1.0
 OrchardVersion: 1.6.0
-Description: Create a layer for widgets based on the content's tags.
+Description: An awesome collection of tag based features. Tagged layer rule and tag query filters.
+Tags: tags, layer-rules, filters, queries
 Features:
 	NogginBox.Tagged:
 		Name: Tagged layer rule
 		Description: Create a layer for widgets based on the content's tags.
 		Category: Layer rules
-	NogginBox.TagsMatchFilter:
-		Name: Tags match filter
+		Dependencies: Orchard.Tags
+	NogginBox.TagsMatchContentFilter:
+		Name: Tags match content filter
 		Description: Filter content whose tags match tags for current content.
-		Category: Filters
-		Dependencies: Orchard.Projections
+		Category: Query filters
+		Dependencies: NogginBox.Tagged, Orchard.Projections, Orchard.Tags
 	NogginBox.TagsInQuerystringFilter:
 		Name: Tags in querystring filter
 		Description: Filter content whose tags match tags provided in querystring.
-		Category: Filters
-		Dependencies: Orchard.Projections
+		Category: Query filters
+		Dependencies: NogginBox.Tagged, Orchard.Projections, Orchard.Tags

@@ -8,7 +8,6 @@ using Orchard.Widgets.Services;
 
 namespace NogginBox.Tagged.Rules
 {
-	[OrchardFeature("NogginBox.Tagged")]
 	public class WithTagsRuleProvider : IRuleProvider
 	{
 		private readonly IWorkContextAccessor _workContextAccessor;

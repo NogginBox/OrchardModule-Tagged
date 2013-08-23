@@ -93,7 +93,7 @@
   <ItemGroup>
     <Compile Include="Filters\TagsInQuerystringFilter.cs" />
     <Compile Include="CurrentContentItemHandler.cs" />
-    <Compile Include="Filters\TagsMatchFilter.cs" />
+    <Compile Include="Filters\TagsMatchContentFilter.cs" />
     <Compile Include="Forms\TagMatchTypeForm.cs" />
     <Compile Include="Rules\WithTagsRuleProvider.cs" />
     <Compile Include="WorkContextExtensionMethods.cs" />
