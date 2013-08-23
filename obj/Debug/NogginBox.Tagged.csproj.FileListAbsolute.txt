@@ -104,6 +104,5 @@ C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Mod
 C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Orchard.Themes.pdb
 C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\bin\Iesi.Collections.xml
 C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\bin\System.Net.Http.Formatting.xml
-C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.csprojResolveAssemblyReference.cache
 C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.dll
 C:\Users\Richard\Garsonix\Clients\ISky\iSkyModule.Orchard1.7\src\Orchard.Web\Modules\NogginBox.Tagged\obj\Debug\NogginBox.Tagged.pdb
