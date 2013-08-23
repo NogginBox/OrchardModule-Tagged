@@ -8,16 +8,16 @@ using Orchard.Projections.Descriptors.SortCriterion;
 using Orchard.Projections.Services;
 using Orchard.Tags.Models;
 
-namespace NogginBox.Tagged
+namespace NogginBox.Tagged.SortCriteria
 {
-	[OrchardFeature("NogginBox.TagsMatchSortCriteria")]
-	public class TagsMatchSortCriteria : ISortCriterionProvider
+	[OrchardFeature("NogginBox.TagsMatchContentSortCriteria")]
+	public class TagsMatchContentSortCriteria : ISortCriterionProvider
 	{
 		public Localizer T { get; set; }
 
 		private readonly IWorkContextAccessor _workContextAccessor;
 
-		public TagsMatchSortCriteria(IWorkContextAccessor workContextAccessor)
+		public TagsMatchContentSortCriteria(IWorkContextAccessor workContextAccessor)
 		{
 			_workContextAccessor = workContextAccessor;
 		}

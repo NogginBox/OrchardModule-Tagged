@@ -22,8 +22,8 @@ Features:
 		Description: Filter content whose tags match tags provided in querystring.
 		Category: Query filters
 		Dependencies: NogginBox.Tagged, Orchard.Projections, Orchard.Tags
-	NogginBox.TagsMatchSortCriteria:
-		Name: Tags match sort criteria
+	NogginBox.TagsMatchContentSortCriteria:
+		Name: Tags match content sort criteria
 		Description: Create queries that match tags in content to tag for current content.
 		Category: Queries
 		Dependencies: Orchard.Projections
