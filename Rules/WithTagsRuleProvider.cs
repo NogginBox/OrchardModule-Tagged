@@ -6,9 +6,8 @@ using Orchard.Environment.Extensions;
 using Orchard.Tags.Models;
 using Orchard.Widgets.Services;
 
-namespace NogginBox.Tagged
+namespace NogginBox.Tagged.Rules
 {
-	[OrchardFeature("NogginBox.Tagged")]
 	public class WithTagsRuleProvider : IRuleProvider
 	{
 		private readonly IWorkContextAccessor _workContextAccessor;
