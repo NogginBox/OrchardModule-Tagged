@@ -95,7 +95,7 @@
     <Compile Include="CurrentContentItemHandler.cs" />
     <Compile Include="Filters\TagsMatchFilter.cs" />
     <Compile Include="Forms\TagMatchTypeForm.cs" />
-    <Compile Include="WithTagsRuleProvider.cs" />
+    <Compile Include="Rules\WithTagsRuleProvider.cs" />
     <Compile Include="WorkContextExtensionMethods.cs" />
   </ItemGroup>
   <PropertyGroup>
