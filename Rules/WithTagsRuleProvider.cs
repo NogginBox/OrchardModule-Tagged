@@ -27,7 +27,7 @@ namespace NogginBox.Tagged.Rules
 			var workContext = _workContextAccessor.GetContext();
 			var taggedContent = workContext.GetTaggedContentForCurrentContent();
 
-			if (taggedContent.Any(c => c.As<TagsPart>().CurrentTags.Any(t => String.Equals(t.TagName, tag, StringComparison.OrdinalIgnoreCase))))
+			if (taggedContent != null && taggedContent.Any(c => c.As<TagsPart>().CurrentTags.Any(t => String.Equals(t.TagName, tag, StringComparison.OrdinalIgnoreCase))))
 			{
 				ruleContext.Result = true;
 				return;
