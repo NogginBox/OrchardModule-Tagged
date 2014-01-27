@@ -96,7 +96,7 @@
     <Compile Include="Filters\TagsMatchContentFilter.cs" />
     <Compile Include="Forms\TagMatchTypeForm.cs" />
     <Compile Include="Rules\WithTagsRuleProvider.cs" />
-    <Compile Include="TagsMatchSortCriteria.cs" />
+    <Compile Include="SortCriteria\TagsMatchSortCriteria.cs" />
     <Compile Include="WorkContextExtensionMethods.cs" />
   </ItemGroup>
   <PropertyGroup>
