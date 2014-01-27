@@ -59,6 +59,7 @@ namespace NogginBox.Tagged.Filters
 					foreach (var tag in tagNames)
 					{
 						var tagName = tag;
+						// Todo: This seems to break if tagName has a space in it.
 						selector = alias => alias.ContentPartRecord<TagsPartRecord>().Property("Tags", "tags"+tagName);
 						filter = x => x.Eq("TagRecord.TagName", tagName);
 						context.Query.Where(selector, filter);
